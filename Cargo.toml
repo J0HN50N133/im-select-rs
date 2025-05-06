@@ -1,0 +1,15 @@
+[package]
+name = "im-select-rs"
+version = "0.1.0"
+edition = "2021"
+description = "📟 Switch your input method through terminal"
+repository = "https://github.com/J0HN50N133/im-select-rs"
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.98"
+[dependencies.windows]
+version = "0.61.1"
+features = ["Win32_UI_WindowsAndMessaging", "Win32_UI_Input_KeyboardAndMouse", "Win32_UI_Input_Ime"]
